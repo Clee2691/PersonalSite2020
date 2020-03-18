@@ -1,2 +1,4 @@
 .vscode
 venv
+personal_app/__pycache__
+__pycache__
