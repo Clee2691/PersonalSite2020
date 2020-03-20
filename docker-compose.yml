@@ -1,0 +1,23 @@
+version: "3.7"
+
+services: 
+    personal_app:
+        build: ./flask_app
+        command: gunicorn -b 0.0.0.0:80 run_app:site_app
+        networks:
+            - web_nw
+        expose:
+           - 80
+    
+    nginx:
+        build: ./nginx
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+        ports:
+            - 85:80 # Host port:Container Port
+        networks:
+            - web_nw
+        depends_on: 
+            - personal_app
+networks:
+    web_nw:
+        driver: bridge

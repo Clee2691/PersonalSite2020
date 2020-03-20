@@ -1,0 +1,12 @@
+<html>
+    <title>Placeholder home</title>
+    <body>
+        <div class='nav-bar'>
+            <a href={{ url_for('index')}}> Home </a>
+            <a href={{ url_for('about')}}> About </a>
+            <a href={{ url_for('contact')}}> contact</a>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
