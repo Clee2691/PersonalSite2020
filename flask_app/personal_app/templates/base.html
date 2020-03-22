@@ -1,12 +1,64 @@
-<html>
-    <title>Placeholder home</title>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Bootstrap Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Responsive viewport metatags-->
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--Google Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/b78cc9f30f.js" crossorigin="anonymous"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+        <!--Personal CSS-->
+        <link rel="stylesheet" href="/static/site.css">
+
+    </head>
+
+    <title>Calvin Z Lee</title>
+
     <body>
-        <div class='nav-bar'>
-            <a href={{ url_for('index')}}> Home </a>
-            <a href={{ url_for('about')}}> About </a>
-            <a href={{ url_for('contact')}}> contact</a>
+
+        <div class="nav-container font-weight-bold">
+             <nav class='navbar navbar-expand-lg nav-custom d-lg-flex flex-lg-row align-items-center'>
+
+                <div class='mr-auto'>
+                    <div class="navbar-brand czl_custom" >CZL</div>
+                </div>
+    
+                <a class='nav-link text-reset' href={{ url_for('index') }}> HOME </a> <span> | </span>
+                <a class='nav-link text-reset' href={{ url_for("projects") }}> PROJECTS </a> <span> | </span>
+                <a class='nav-link text-reset' href={{ url_for('resume') }}> RESUME </a> <span> | </span>
+                <a class='nav-link text-reset' href={{ url_for("contact") }}> CONTACT </a>
+            </nav>
         </div>
+       
+    
         {% block content %}
         {% endblock %}
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     </body>
+
+    <div class="copyright_footer d-lg-flex flex-lg-row align-items-center">
+    
+            <div class="mr-auto border-top border-bottom" id='copyright'>
+              &copy; COPYRIGHT 2020 CALVIN Z LEE
+            </div>
+            
+            <a class="foot-links" href="https://www.linkedin.com/in/calvinzlee/"> <i class="fab fa-linkedin fa-2x"> &nbsp;</i></a>
+            <a class="foot-links" href="https://github.com/Clee2691"> <i class="fab fa-github-square fa-2x"></i></a>
+                   
+    </div>
+    
 </html>

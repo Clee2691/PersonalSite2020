@@ -5,10 +5,14 @@ from personal_app import site_app
 def index():
     return render_template("index.html")
 
-@site_app.route("/about")
-def about():
-    return render_template("about.html")
+@site_app.route("/resume")
+def resume():
+    return render_template("resume.html")
 
 @site_app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+@site_app.route("/projects")
+def projects():
+    return render_template("projects.html")
