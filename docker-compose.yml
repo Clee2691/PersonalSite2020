@@ -2,7 +2,7 @@ version: "3.7"
 
 services: 
     personal_app:
-        build: ./flask_app
+        build: ./czl_personal_site
         command: gunicorn -b 0.0.0.0:80 run_app:site_app
         networks:
             - web_nw
