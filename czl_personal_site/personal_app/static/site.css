@@ -72,16 +72,308 @@ body {
     -1px 1px 0 #000,
     1px 1px 0 #000;  
 }
-
 .paralla-content {
     background-attachment: fixed;
-    height: 55rem;
+    height: 80rem;
 }
 
-#content-1 {
+.prof-paralla-content {
+    background-attachment: fixed;
+    height: 60rem;
+}
+
+.wuxi-paralla-content {
+    background-attachment: fixed;
+    height: 100rem;
+}
+
+.bbb-paralla-content {
+    background-attachment: fixed;
+    height: 134rem;
+}
+
+.uvm-paralla-content {
+    background-attachment: fixed;
+    height: 40rem;
+}
+
+#main-bg {
     background-image: url(images/biochemistry2edit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#content-2 {
-    background-image: url(images/biochemistry1.jpg);
+#beam-bg {
+    background-image: url(images/beambg.png);
+    background-size: cover;
+}
+
+#bb1-bg {
+    background-image: url(images/bbb2_edit1.png);
+    background-size: fill;
+    background-position: center;
+}
+
+#wuxi-bg{
+    background-image: url(images/wuxibg1.png);
+    background-size: fill;
+    background-position: center;
+}
+
+#uvm-bg {
+    background-image: url(images/uvmbg.png);
+    background-size: fill;
+}
+
+.beam-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 250px;
+    margin-bottom: -2rem;
+    padding-top: 2rem;
+}
+
+.bbb-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width: 750px;
+    height: 245px;
+
+}
+
+.wxat-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 206px; 
+    padding-top: 2rem;
+
+}
+
+.uvm-logo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    width: 700px;
+    height: 155.55px;
+}
+
+.work-header {
+    color:white;
+    padding-top: 5rem;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.position-title {
+    color:white;
+    font-style: italic;
+    font-size: 25px;
+
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.prof-summary {
+    color: white;
+    padding-top: 3rem;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.prof-container {
+    position: relative;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.timeline-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15rem;
+    top: 18rem;
+    bottom: 0;
+    border: 0.1rem solid black;
+    background-color: white;
+    width: 0.5rem;
+    border-width: 0.15rem;
+}
+
+.timeline-container-cont {
+    position: relative;
+}
+
+.timeline-container-cont::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15rem;
+    top: -0.08rem;
+    bottom: 0;
+    border: 0.1rem solid black;
+    background-color: white;
+    width: 0.5rem;
+    border-width: 0.15rem;
+}
+
+.timeline-label {
+    color: white;
+    font-size: 24px;
+    display: block;
+    clear: both;
+    margin: 0 0 0 12.55rem;
+}
+
+.bbbtimeline-label {
+    color: white;
+    font-size: 24px;
+    display: block;
+    clear: both;
+    margin: 0 0 0 12.55rem;
+}
+
+.timeline-icons {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+    line-height: 3.5rem;
+    width: 5.5rem;
+    border: 0.3rem solid black !important;
+    cursor: default;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+
+.timeline-description {
+    position: relative;
+    margin-top: 14rem;
+}
+
+.bbbtimeline-description {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.wuxi1-timeline-description {
+    position: relative;
+    margin-top: 8rem;
+}
+
+.job-box {
+    color: white;
+    border-radius: 2%;
+    border-left: 3px solid #DAE1E5;
+    position: relative;
+    max-width: none;
+    background-color:rgba(101,102,106, 0.6);
+    margin-right: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    text-align: start;
+
+}
+
+.department-label {
+    font-size: 20pt;
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+}
+
+.bbb2department-label {
+    font-size: 20pt;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+}
+
+.job-bullets {
+    flex: 1;
+    overflow: auto;
+}
+
+.job-summary {
+    font-size: 15pt;
+    font-style: italic;
+}
+
+.bbb2job-summary {
+    font-size: 15pt;
+    font-style: italic;
+    padding-top: 5rem;
+}
+
+.description-item {
+    font-size: 12pt;
+    margin-bottom:2rem;
+}
+
+.bbbdescription-item {
+    font-size: 12pt;
+    margin-bottom:1rem;
+}
+
+.contact-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.contact-container {
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.contact-header {
+    color: white;
+    font-size: 36pt;
+}
+
+.contact-img-container {
+    padding-right: 15rem;
+}
+
+.contact-icon {
+    padding-right: 1rem;
+}
+
+.contact-tagline {
+    color:white;
+    font-size: 24pt;
+    padding-top: 1rem;
+}
+
+.contact-btn {
+    font-size: 20pt;
+    margin-top: 4rem;
+
 }

@@ -1,7 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div>
-    <h1>Contact Information</h1>
+
+<div class='d-flex flex-row contact-container'>
+
+    <div class='flex-fill align-items-start'> 
+        <div class='contact-header text-center'>
+            Contact Me!
+        </div>
+
+        <div class='contact-tagline text-center'>
+            The best way to reach me is through email: Clee2691@gmail.com
+        </div>
+
+        <div class='text-center'>
+            <a href='mailto:clee2691@gmail.com' class='btn btn-danger btn-lg contact-btn'><i class="fas fa-envelope-open-text contact-icon"></i>Email</a>
+        </div>
+
+        <div class='text-center'>
+            <a href='https://www.linkedin.com/in/calvinzlee/' class='btn btn-primary btn-lg contact-btn'><i class="fab fa-linkedin-in fa-lg contact-icon"></i>LinkedIn</a>
+        </div>
+        
+        <div class='text-center'>
+            <a href='https://github.com/Clee2691' class='btn btn-success btn-lg contact-btn'><i class="fab fa-github-alt contact-icon fa-lg"></i>Github</a>
+        </div>
+
+    </div>
+    
+    <div class='contact-img-container'>
+        <img class='contact-image'src='{{ url_for('static', filename='images/contact.png') }} '>
+    </div>
+        
+
 </div>
+
 {% endblock %}

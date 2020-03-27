@@ -3,26 +3,248 @@
 {% block content %}
 
 
-<div class="paralla-content" id="content-1">
-    <div class='container-fluid'>
-       <h1 class='display-1'>WORK EXPERIENCE</h1> 
+<div class="prof-paralla-content prof-container" id="main-bg" data-stellar-background-ratio="0.5">
+    <h1 class='display-3 work-header text-center'>PROFESSIONAL SUMMARY</h1>
+
+    <h3 class='prof-summary text-center'>
+
+        Biotech professional with more than 5 years of industry experience leveraging a diverse skillset of microbiology, cell culture,
+        and assay development skills to drive development of life-long cures for patients with serious diseases.
+
+    </h3>
+</div>
+
+
+<div class="paralla-content timeline-container" id="beam-bg" data-stellar-background-ratio="0.2">
+    <img src='{{ url_for('static', filename='images/BeamLogoborder.png') }}' class='beam-logo'>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">APRIL 2019 - PRESENT</span> 
     </div>
-    
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-tie btn btn-primary'></i>
+        <span class='position-title'><u>Senior Research Associate</u></span> 
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:45rem;'>
+            <div class='timeline-description'>
+                <div class='timeline-label'>
+                    <i class='timeline-icons fas fa-flask btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='department-label'> Analytical Development (LC/MS) </h2>
+                <hr>
+                <p class='job-summary'>Develop LC/MS based methods for oligonucleotide (gRNA, mRNA) and protein (Base editors) characterization.</p>
+                <ul class='job-bullets'>
+                    <li class='description-item'>Learned and became familiar with mass spectrometry and the Thermo QExactive HF Mass Spectrometer</li>
+                    <li class='description-item'>Developed LC/MS method for 5'Capping and Poly(A) tailing of mRNA</li>
+                    <li class='description-item'>Developed LC/MS method for gRNA purity, identity, and impurity analysis</li>
+                    <li class='description-item'>Collaborate cross-functionally to identify and develop critical analytical assays</li>
+                    <li class='description-item'>Assisted in development of LC/MS method for peptide mapping of hemoglobins and base editors</li>
+                    <li class='description-item'>Provided insights for an UPLC method for globin quantification</li>
+                    <li class='description-item'>Test and evaluate different software for optimal mass spec data analysis</li>
+                    <li class='description-item'>Collaborate with computational team for automated mass spec analysis</li>
+                    <li class='description-item'>Support Benchling implementation of mRNA analytics requests</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="paralla-content" id="content-2" data-stellar-background-ratio="0.5">
-    <p>TEXT HERE</p>
+
+
+<div class="bbb-paralla-content timeline-container-cont" id="bb1-bg" data-stellar-background-ratio="0.2">
+    <img src='{{ url_for('static', filename='images/bluebirdlogoborder.png') }}' class='bbb-logo'>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">January 2018 - APRIL 2019</span> 
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-tie btn btn-primary'></i>
+        <span class='position-title'><u>Associate Scientist II</u></span> 
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:29rem; margin-bottom: 1rem;'>
+            <div class='timeline-description'>
+                <div class='timeline-label'>
+                    <i class='timeline-icons fas fa-flask btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='department-label'> Lentiviral Vectors & HSC Research (Translational Research) </h2>
+                <hr>
+                <p class='job-summary'>Develop and support hematopoietic stem cell technologies.</p>
+                <ul class='job-bullets'>
+                    <li class='bbbdescription-item'>Actively developed and troubleshooted an assay for flow characterization of Sickled RBCs.</li>
+                    <li class='bbbdescription-item'>Troubleshooted and developed an assay for single cell vector copy number characterization of
+                        transduced CD34+ cells using FISH technology </li>
+                    <li class='bbbdescription-item'>Supported HPLC globin and hemoglobin sample processing cross functionally and implemented a new UPLC system allowing
+                        40% faster sample processing through method development</li>
+                    <li class='bbbdescription-item'>Provided support for on-going projects in a collaborative team environment</li>
+                    <li class='bbbdescription-item'>Actively learned and implemented new technologies</li>
+                    <li class='bbbdescription-item'>Documented data and results in an electronic lab notebook (Sapio)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:18rem;'>
+            <div class='bbbtimeline-description'>
+                <div class='bbbtimeline-label'>
+                    <i class='timeline-icons fas fa-chalkboard-teacher btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='department-label'> Managed and trained Northeastern Co-op </h2>
+                <p class='job-summary'>Project: Small molecule in vitro HSC expansion</p>
+                <ul class='job-bullets'>
+                    <li class='bbbdescription-item'>Trained co-op to transduce hematopoietic stem cells with lentiviral vectors to enhance expansion</li>
+                    <li class='bbbdescription-item'>Provided hands on training of critical lab techniques including but not limited to aseptic mammalian
+                        cell culture, transduction with lentiviral vectors, flow cytometry, and qPCR.</li>
+                    <li class='bbbdescription-item'>Help plan and guide co-op on experimental design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">DECEMBER 2016 - JANUARY 2018</span> 
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-tie btn btn-primary'></i>
+        <span class='position-title'><u>Associate Scientist</u></span> 
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:37rem; margin-bottom: 1rem;'>
+            <div class='timeline-description'>
+                <div class='timeline-label'>
+                    <i class='timeline-icons fas fa-flask btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='bbb2department-label'> Lentiviral Vectors & HSC Research (Translational Research) </h2>
+                <p class='bbb2job-summary'>Develop and support hematopoietic stem cell technologies.</p>
+                <ul class='job-bullets'>
+                    <li class='description-item'>Utilized lentiviral vectors to genetically modify hematopoietic stem cells and monitor effects.</li>
+                    <li class='description-item'>Expanded and maintained genetically modified hematopoietic stem cells.</li>
+                    <li class='description-item'>Characterized genetically modified HSCs using standard immunological assays including flow
+                        cytometry, CFC assay, vector copy number assay</li>
+                    <li class='description-item'>Compiled and presented research data to functional teams</li>
+                    <li class='description-item'>Maintained a lab notebook and contributed to support documentation when necessary</li>
+                    <li class='description-item'>Provided critical lab support while working in a collaborative team environment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div class="paralla-content" id="content-1" data-stellar-background-ratio="0.5">
-    <p>TEXT HERE</p>
+
+
+<div class="wuxi-paralla-content timeline-container-cont" id="wuxi-bg" data-stellar-background-ratio="0.5">
+    <img src='{{ url_for('static', filename='images/apptec_logoborder.png') }}' class='wxat-logo'>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">OCTOBER 2015-NOVEMBER 2016</span> 
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-tie btn btn-primary'></i>
+        <span class='position-title'><u>Laboratory Technician</u></span> 
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:32rem;'>
+            <div class='timeline-description'>
+                <div class='timeline-label'>
+                    <i class='timeline-icons fas fa-flask btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='department-label'> DNA Sequencing (Molecular Biology)</h2>
+                <hr>
+                <p class='job-summary'> Provided genetic stability support for key clients through DNA Sequencing studies.</p>
+                <ul class='job-bullets'>
+                    <li class='description-item'>Designed, wrote, implemented, and oversaw the execution of protocols for a variety of assays
+                        performed in the lab.</li>
+                    <li class='description-item'>Revised the Human Cell Line Identification protocol to reduce assay turnaround by 50%</li>
+                    <li class='description-item'>Accurately completed batch records and prepared client reports according to and in compliance with
+                        GLP and cGMP guidelines and SOPs.</li>
+                    <li class='description-item'>Served as a point of contact for key client, met weekly to establish timelines and communicate
+                        progress and final results.</li>
+                    <li class='description-item'>Worked collaboratively with Project Management and Quality Assurance, maintained communication
+                        with all clients.</li>
+                    <li class='description-item'>Responsible for coordinating and scheduling laboratory operations and training of personnel.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">JANUARY 2015 - OCTOBER 2015</span> 
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-tie btn btn-primary'></i>
+        <span class='position-title'><u>Associate Lab Technician</u></span> 
+    </div>
+
+    <div class='d-flex flex-column'>
+        <div class='d-flex flex-row' style='height:21rem;'>
+            <div class='wuxi1-timeline-description'>
+                <div class='timeline-label'>
+                    <i class='timeline-icons fas fa-flask btn btn-primary'></i>
+                </div> 
+            </div>
+
+            <div class='job-box flex-grow-1 d-flex flex-column'>
+                <h2 class='department-label'> PCR Testing (Molecular Biology) </h2>
+                <hr>
+                <p class='job-summary'>Provided biological testing support for key clients through various molecular biology assays.</p>
+                <ul class='job-bullets'>
+                    <li class='description-item'>Executed protocols for a variety of assays to support mycoplasma detection, viral DNA/ RNA
+                        detection, and residual DNA testing.</li>
+                    <li class='description-item'>Accurately completed batch records according to and in compliance with GLP and cGMP guidelines
+                        and SOPs.</li>
+                    <li class='description-item'>Prepared critical reagents for assays.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="paralla-content" id="content-2" data-stellar-background-ratio="0.5">
-    <p>TEXT HERE</p>
+
+
+<div class="uvm-paralla-content timeline-container-cont" id="uvm-bg" data-stellar-background-ratio="0.5">
+    <img src='{{ url_for('static', filename='images/uvmlogo2.png') }}' class='uvm-logo'>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons far fa-calendar-alt btn btn-primary'> </i> 
+        <span class="badge badge-pill badge-danger">September 2010 - May 2014</span> 
+    </div>
+
+    <div class='timeline-label'>
+        <i class='timeline-icons fas fa-user-graduate btn btn-primary'></i>
+        <span class='position-title'><u>B.S Biochemistry</u></span> 
+    </div>
+
+
 </div>
-<div class="paralla-content" id="content-1" data-stellar-background-ratio="0.5">
-    <p>TEXT HERE</p>
-</div>
-<div class="paralla-content" id="content-2" data-stellar-background-ratio="0.5">
-    <p>EXAMPLE TEXTTTTT</p>
-</div>
+
 
 {% endblock %}
